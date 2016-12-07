@@ -1040,7 +1040,7 @@ else {
 
     # determine what the max clients setting is
     my $maxclients;
-    print "Version : ".get_apache_version($process_name);
+    print "Version : ".get_apache_version($process_name)."\n";
  	if (get_apache_version($process_name) =~ m/2\.4/) {
  		$maxclients = find_master_value(\@config_array, $model, 'maxrequestworkers');
  	} else {		
